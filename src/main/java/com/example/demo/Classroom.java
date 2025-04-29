@@ -1,5 +1,9 @@
 package com.example.demo;
 
+import com.example.demo.Learning.Students;
+import com.example.demo.Teaching.Instructors;
+import com.example.demo.Teaching.Teachers;
+
 public class Classroom {
     private final Instructors instructors;
     private final Students students;

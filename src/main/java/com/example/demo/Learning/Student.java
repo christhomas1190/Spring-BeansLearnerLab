@@ -1,4 +1,8 @@
-package com.example.demo;
+package com.example.demo.Learning;
+
+import com.example.demo.Humans.Person;
+
+import java.util.List;
 
 public class Student extends Person implements Learner {
     private double totalStudyTime;

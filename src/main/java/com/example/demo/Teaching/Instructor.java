@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.example.demo.Teaching;
 
+import com.example.demo.Learning.Learner;
+import com.example.demo.Humans.Person;
 import org.springframework.stereotype.Component;
 
 @Component
