@@ -20,4 +20,12 @@ public class InstructorsConfig {
     public Instructors tcUkInstructors() {
         return new Instructors((Instructor) List.of("James", "Victoria"));
     }
+    @Primary
+    @Bean(name = "instructors")
+    public Instructors allInstructors() {
+        Instructors combined = new Instructors();
+        combined.addAll(tcUsaInstructors());
+        combined.addAll(tcUkInstructors());
+        return combined;
+    }
 }

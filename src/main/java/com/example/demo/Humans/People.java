@@ -16,14 +16,15 @@ public abstract class People <PersonType extends Person> implements Iterable<Per
     public void addPerson(PersonType person){
         personList.add(person);
     }
-    public void addRemove(PersonType person){
+    public void remove(PersonType person){
         personList.remove(person);
     }
-    public void clearPersonList(PersonType person){
+    public void clearPersonList(){
         personList.clear();
     }
-    public void personListSize(PersonType person){
+    public ArrayList<PersonType> personListSize(PersonType person){
         personList.size();
+        return personList;
     }
 
     public void addAll (Iterable<PersonType> people){
